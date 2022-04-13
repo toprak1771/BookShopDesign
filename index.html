@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/images/logo.png"
+            alt="Book Shop Logo"
+            width="30"
+            height="24"
+          />
+          Book Shop
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >E-BOOKS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">E-COURSE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TUTORIALS</a>
+            </li>
+            <li class="nav-item align-self-center mb-1">|</li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-basket-shopping"><span class="badge badge-new top-0 start-100 rounded-pill translate-middle">7</span></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">log ın</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link c-dark" href="#">sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="container-fluid min-vh-100 p-0">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.pexels.com/photos/626986/pexels-photo-626986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              class="d-block w-100 slider-img"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>First slide label</h1>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+              <button type="button" class="btn btn-dark rounded-pill fs-6 px-5">
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/3968061/pexels-photo-3968061.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              class="d-block w-100 slider-img"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Second slide label</h1>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+              <button type="button" class="btn btn-dark rounded-pill fs-6 px-5">
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/4855385/pexels-photo-4855385.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              class="d-block w-100 slider-img"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Third slide label</h1>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+              <button type="button" class="btn btn-dark rounded-pill fs-6 px-5">
+                LEARN MORE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="row mt-5 mx-0 px-0">
+        <section class="offset-2 col-9 min-vh-100">
+          <div
+            class="d-flex flex-row justify-content-between align-items-center"
+          >
+            <h3>E-BOOKS & WHITEPAPERS</h3>
+            <input class="search-input" type="text" placeholder="SEARCH">
+            <i
+              class="fa-solid fa-magnifying-glass c-gray position-search"
+              onclick="searchFunction()"
+            ></i> 
+          </div>
+          <section class="row mt-5 mb-5">
+            <div class="col-4 p-3">
+              <div class="card card-bg">
+                <i class="fa-solid fa-heart like-book"></i>
+                <img
+                  src="./assets/images/sefiller.jpg"
+                  class="card-img-top img-thumbnail book-images"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5 class="card-title text-center fs-5">
+                    Victor Hugo - Sefiller
+                  </h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow btn-go"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div class="card card-bg">
+                <i class="fa-solid fa-heart like-book"></i>
+                <img
+                  src="./assets/images/bukowski.jpg"
+                  class="card-img-top img-thumbnail book-images"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5 class="card-title text-center fs-5">
+                    Charles Buckowski - Posthane
+                  </h5>
+                  <a href="./buckowski-postane.html" class="btn btn-light rounded-pill shadow btn-go"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div class="card card-bg">
+                <i class="fa-solid fa-heart like-book"></i>
+                <img
+                  src="./assets/images/peyami safa.jpg"
+                  class="card-img-top img-thumbnail book-images"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5
+                    title="Peyami Safa - Dokuzuncu Hariciye Koğuşu"
+                    class="card-title text-center"
+                  >
+                    Peyami Safa - Dokuzuncu Hariciye Koğuşu
+                  </h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow btn-go"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div class="card card-bg">
+                <i class="fa-solid fa-heart like-book"></i>
+                <img
+                  src="./assets/images/sefiller.jpg"
+                  class="card-img-top img-thumbnail book-images"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5 class="card-title text-center fs-5">
+                    Victor Hugo - Sefiller
+                  </h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow btn-go"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div class="card card-bg">
+                <i class="fa-solid fa-heart like-book"></i>
+                <img
+                  src="./assets/images/bukowski.jpg"
+                  class="card-img-top img-thumbnail book-images"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5 class="card-title text-center fs-5">
+                    Charles Buckowski - Posthane
+                  </h5>
+                  <a href="./buckowski-postane.html" class="btn btn-light rounded-pill shadow btn-go"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div class="card card-bg">
+                <i class="fa-solid fa-heart like-book"></i>
+                <img
+                  src="./assets/images/peyami safa.jpg"
+                  class="card-img-top img-thumbnail book-images"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5
+                    title="Peyami Safa - Dokuzuncu Hariciye Koğuşu"
+                    class="card-title text-center"
+                  >
+                    Peyami Safa - Dokuzuncu Hariciye Koğuşu
+                  </h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow btn-go"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div class="card card-bg">
+                <i class="fa-solid fa-heart like-book"></i>
+                <img
+                  src="./assets/images/sefiller.jpg"
+                  class="card-img-top img-thumbnail book-images"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5 class="card-title text-center fs-5">
+                    Victor Hugo - Sefiller
+                  </h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow btn-go"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div class="card card-bg">
+                <i class="fa-solid fa-heart like-book"></i>
+                <img
+                  src="./assets/images/bukowski.jpg"
+                  class="card-img-top img-thumbnail book-images"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5 class="card-title text-center fs-5">
+                    Charles Buckowski - Posthane
+                  </h5>
+                  <a href="./buckowski-postane.html" class="btn btn-light rounded-pill shadow btn-go"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div class="card card-bg">
+                <i class="fa-solid fa-heart like-book"></i>
+                <img
+                  src="./assets/images/peyami safa.jpg"
+                  class="card-img-top img-thumbnail book-images"
+                  alt="..."
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5
+                    title="Peyami Safa - Dokuzuncu Hariciye Koğuşu"
+                    class="card-title text-center"
+                  >
+                    Peyami Safa - Dokuzuncu Hariciye Koğuşu
+                  </h5>
+                  <a href="#" class="btn btn-light rounded-pill shadow btn-go"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-4 offset-4 text-center">
+             <a href="./list.html"> <button class="btn btn-success load-more">
+              LOAD MORE <i class="fa-solid fa-chevron-down ms-2"></i>
+            </button></a> 
+            </div>
+          </section>
+        </section>
+        <section class="offset-2 col-9">
+          <h4>FOLLOW BOOK SHOP</h4>
+          <section id="social-media-links" class="row">
+            <div class="col-4 p-3">
+              <div class="social-media-container">
+                <strong>FACEBOOK</strong>
+                <button class="btn btn-sm face-media-button mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Like</span>
+                  <span>14K</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div class="social-media-container instagram-border">
+                <strong>INSTAGRAM</strong>
+                <button class="btn btn-sm face-media-button instagram-bg mt-2">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Follow/bookshop</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-4 p-3">
+              <div class="social-media-container twitter-border">
+                <strong>TWITTER</strong>
+                <button class="btn btn-sm face-media-button twitter-bg mt-2">
+                  <i class="fa-brands fa-twitter"></i>
+                  <span>Follow @bookshop</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="d-flex align-items-center justify-content-center mt-5 mb-5"
+          >
+            <div class="d-flex flex-column align-items-center">
+              <h4>SUBSCRIBE TO OUR NEWSLETTTER</h4>
+              <div class="mt-4">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail Address..."
+                  class="newsletter-email"
+                  id="email"
+                  size="25"
+                />
+                <button type="button" onclick="addMail()" class="btn btn-success load-more ms-3">
+                  SUBSCRIBE
+                </button>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer class="py-5 ms-5 me-5">
+      <div class="d-flex justify-content-between">
+        <div class="footer-title">
+          <h5><strong>Learn More </strong></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 mt-3">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >TOUR</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                > NEW Features</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >CHANGELOG</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >CUSTOMERS</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >ENTERPRISE</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >PRICING & PLANS</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-title">
+          <h5><strong>ABOUT </strong></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 mt-3">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >BLOG</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >COMPANY</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >JOBS</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-title">
+          <h5><strong>SUPPORT</strong></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 mt-3">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >COMMUNITY</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >CONTACT US</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >UXPIN TUTORIALS</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-title">
+          <h5><strong>FEATURES</strong></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 mt-3">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >MOCKUPS</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >PROTOTYPING</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >PHOTOSHOP IMPORT</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >SKETCH IMPORT</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-title">
+          <h5><strong>FREEBIES</strong></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 mt-3">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >MOCKUPS</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >FREEBIES</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >E-BOOKS</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >UI KITS</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                >TEMPLATES</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="d-flex justify-content-center py-4 my-4 align-items-center">
+        <img src="./assets/images/logo.png" width="64" height="64" />
+      </div>
+    </footer>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

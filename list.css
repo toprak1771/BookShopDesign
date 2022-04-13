@@ -1,0 +1,209 @@
+.shorted-area
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 5px 10px #88888866;
+    height: 40px ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.product-area
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.filter-section
+{
+    max-height: 140px;
+    overflow-y: auto;
+    margin-bottom: 0.7rem;
+
+}
+.filter-section::-webkit-scrollbar-track
+{
+    border: 1px solid #000;
+    padding: 2px 0;
+    background-color: #404040;
+    
+}
+.filter-section::-webkit-scrollbar
+{
+    width: 12px;
+}
+.filter-section::-webkit-scrollbar-thumb
+{
+    border-radius:10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #737272;
+    border: 1px solid #000;
+}
+
+.filter-section::-webkit-scrollbar-thumb:hover
+{
+    background-color: rgb(56, 106, 155);
+}
+.price-filter-label
+{
+font-size: 12px;
+}
+.price-filter-input
+{
+    max-width: 58px;
+}
+.search-btn
+{
+    height: 30px;
+    margin-left: 0.5rem;
+    margin-top: auto;
+    background-color: #438ed8;
+    border: none;
+    color: white !important;
+    font-weight: 400 !important;
+}
+.search-btn:hover
+{
+    background-color: #85c0fc;
+
+}
+.btn-go:hover{
+    background-color: orange;
+}
+.line
+{
+    margin-top: auto;
+    height: 70px;
+    width: 70px;
+}
+
+.fav-stars
+  {
+    color: orange;
+  }
+
+  .star-underline
+  {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+
+  }
+
+.stars-text
+{
+    color: black;
+    
+    
+}
+
+.stars-text:hover
+{
+    color: red;
+}
+.regular-star
+{
+    margin-left: -.4vh;
+    
+}
+
+.regular-star2
+{
+    margin-left: -.5vh;
+}
+
+.filter-title
+{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.btn-common-property
+{
+    background-color: transparent;
+    
+    background-color:#ffffff !important;
+    color: #372016 !important;
+}
+
+.btn-common-property:hover
+{
+    background-color: rgb(227, 222, 222) !important;
+    opacity:0.8 !important ;
+    outline: none !important;
+    border: none !important;
+}
+
+.btn-common-property:active
+{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-previous
+{
+    border-left:1px solid #d5d9d9 ;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top:1px solid #d5d9d9 ;
+    border-bottom: 1px solid #d5d9d9;
+    border-right:1px solid #d5d9d9 ;
+    line-height:46px ;
+    padding-left: 12px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center !important;
+    width: 7vw;
+}
+
+
+.btn-next
+{
+   
+    border-right:1px solid #d5d9d9 ;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top:1px solid #d5d9d9 ;
+    border-bottom: 1px solid #d5d9d9;
+    border-left: 1px solid #d5d9d9;
+    line-height:46px ;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center !important;
+    width: 7vw;
+}
+
+.btn-one
+{
+    line-height: 46px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border:1px solid #d5d9d9;
+    min-width: 24px; 
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center !important;
+    width: 3vw;
+}
+
+.btn-two
+{
+    line-height: 46px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border:1px solid #d5d9d9 ;
+    width: 3vw;
+    min-width: 24px; 
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center !important;
+}

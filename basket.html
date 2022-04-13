@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./basket.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/images/logo.png"
+              alt="Book Shop Logo"
+              width="30"
+              height="24"
+            />
+            Book Shop
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >E-BOOKS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">E-COURSE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TUTORIALS</a>
+              </li>
+              <li class="nav-item align-self-center mb-1">|</li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-basket-shopping"><span class="badge badge-new top-0 start-100 rounded-pill translate-middle">7</span></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">log ın</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link c-dark" href="#">sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="container-fluid">
+        <section class="row">
+          <section class="col-9">
+            <table id="basket-table" class="table table-responsive basket-table">
+              <thead class="th-centered">
+                <th>Kitap Resmi</th>
+                <th>Adet</th>
+                <th>Birim Fiyatı</th>
+                <th>Toplam Fiyat</th>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </section>
+          <section class="col-3">
+            <div class="basket-actions">
+              <h2 class="text-center"><strong>Sepet</strong></h2>
+              <label for="kuponKod" class="form-label">Kupon Kodu</label>
+              <div class="input-group mb-3">
+                <input
+                  id="kuponKod"
+                  type="text"
+                  class="form-control"
+                  placeholder="Kupon kodunuzu girin.."
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-sm btn-danger"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Uygula
+                </button>
+              </div>
+              <div class="" id="basket_price">
+                <h4 class="text-center"><strong>Sepet Tutarı</strong></h4>
+                <h4 class="text-center" id="totalPriceHtml"></h4>
+                <h4 class="text-center"><strong>Kargo Ücreti</strong></h4>
+                <h4 class="text-center" id="priceCargo">14,90 ₺</h4>
+                <h4 class="text-center"><strong>Genel Toplam</strong></h4>
+                <h4 class="text-center" id="totalPriceSum"></h4>
+              </div>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nemo
+                rem corrupti beatae doloremque repudiandae odio ut corporis,
+                tenetur aliquam vitae! Sapiente quam quos maxime!
+              </p>
+              <div class="d-flex justify-content-center">
+                <button class="btn btn-danger mb-2">Ödemeye Git</button>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    <footer class="py-5 ms-5 me-5">
+        <div class="d-flex justify-content-between">
+          <div class="footer-title">
+            <h5><strong>Learn More </strong></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-3">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >TOUR</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  > NEW Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >CHANGELOG</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >CUSTOMERS</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >ENTERPRISE</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >PRICING & PLANS</a
+                >
+              </li>
+            </ul>
+          </div>
+  
+          <div class="footer-title">
+            <h5><strong>ABOUT </strong></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-3">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >BLOG</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >COMPANY</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >JOBS</a
+                >
+              </li>
+            </ul>
+          </div>
+  
+          <div class="footer-title">
+            <h5><strong>SUPPORT</strong></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-3">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >COMMUNITY</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >CONTACT US</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >UXPIN TUTORIALS</a
+                >
+              </li>
+            </ul>
+          </div>
+  
+          <div class="footer-title">
+            <h5><strong>FEATURES</strong></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-3">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >MOCKUPS</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >PROTOTYPING</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >PHOTOSHOP IMPORT</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >SKETCH IMPORT</a
+                >
+              </li>
+            </ul>
+          </div>
+  
+          <div class="footer-title">
+            <h5><strong>FREEBIES</strong></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 mt-3">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >MOCKUPS</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >FREEBIES</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >E-BOOKS</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >UI KITS</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted footer-subtitle"
+                  >TEMPLATES</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div
+          class="d-flex justify-content-center py-4 my-4 align-items-center">
+          <img src="./assets/images/logo.png" width="64" height="64" />
+        </div>
+      </footer>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
